@@ -43,7 +43,7 @@ const Navbar = () => {
 
     }
     return (
-        <div className='navbar fixed z-10 bg-[#1C3D5A]/10 bg-clip-padding blur-backdrop-filter px-4'>
+        <div className='navbar fixed z-10 bg-[#0066ff]/10 bg-clip-padding blur-backdrop-filter px-4'>
 
             <div className="dropdown text-slate-600">
                 <div tabIndex={0} role="button" className="btn btn-ghost  lg:hidden">
@@ -53,7 +53,7 @@ const Navbar = () => {
                     {navOptions}
                 </ul>
             </div>
-            <div className='ml-3 lg:ml-0 flex-1'>
+            <div className='ml-3 lg:ml-12 flex-1'>
                 <div className='flex items-center'>
                     <Link to='/'><img className="w-40" src="https://iili.io/3dtoTJV.png" alt="" /></Link>
                 </div>
@@ -104,7 +104,7 @@ const Navbar = () => {
                     </div>
                 }
                 <div>
-                    <label className="swap swap-rotate text-end ml-3">
+                    <label className="swap swap-rotate text-end ml-3 md:mr-5">
 
                         {/* this hidden checkbox controls the state */}
                         <input type="checkbox" onChange={handleToggle} checked={theme === "light" ? false : true} />
