@@ -1,12 +1,13 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
+import Navbar from "../../Layout/Navbar/navbar";
 
 const Root = () => {
-    // const Location= useLocation()
-    // const noHeaderFooter= Location.pathname.includes('login') || Location.pathname.includes('register')
+    const Location= useLocation()
+    const noHeaderFooter= Location.pathname.includes('login') || Location.pathname.includes('register')
     return (
         <div>
             {/* navbar */}
-            {/* {noHeaderFooter || <Navbar></Navbar>} */}
+            {noHeaderFooter || <Navbar></Navbar>}
 
             {/* Outlet section */}
             <div className="min-h-[calc(100vh-343px)]">
